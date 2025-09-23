@@ -11,6 +11,7 @@ C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CS
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\ConnectFour.AssemblyInfo.cs
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\ConnectFour.csproj.CoreCompileInputs.cache
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\ConnectFour.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\ConnectFour.sourcelink.json
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\staticwebassets\msbuild.ConnectFour.Microsoft.AspNetCore.StaticWebAssets.props
@@ -18,6 +19,7 @@ C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CS
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ConnectFour.props
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ConnectFour.props
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\scopedcss\Components\Board.razor.rz.scp.css
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\scopedcss\Components\Layout\MainLayout.razor.rz.scp.css
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\scopedcss\Components\Layout\NavMenu.razor.rz.scp.css
 C:\Users\diego\OneDrive\PATHWAY\BYU-Idaho\Software_Development\16 Spring 2025\CSE325\BlazorGameApp\ConnectFour\obj\Debug\net8.0\scopedcss\bundle\ConnectFour.styles.css
