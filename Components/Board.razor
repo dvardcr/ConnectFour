@@ -20,10 +20,27 @@
 </nav>
 
 <article>
-    @winnerMessage  <button style="@ResetStyle" @onclick="ResetGame">Reset the game</button>
+    @winnerMessage  
+    <button style="@ResetStyle" @onclick="ResetGame">Reset the game</button>
     <br />
     <span class="alert-danger">@errorMessage</span>
     <span class="alert-info">@CurrentTurn</span>
+    <br />
+
+    <!-- Display cumulative win counts for both players -->
+    <span class="player1-wins">
+    <span class="label">Player 1 Wins:</span> 
+    <span class="score">@player1Wins</span>
+    </span>
+
+    <span class="player2-wins">
+        <span class="label">Player 2 Wins:</span> 
+        <span class="score">@player2Wins</span>
+    </span>
+
+    <!-- New button to reset the player scores -->
+    <button class="reset-score-btn" @onclick="ResetScores">Reset Score</button>
+    <br />
 </article>
 
 <div>
@@ -47,6 +64,10 @@
     private string winnerMessage = string.Empty;
     private string errorMessage = string.Empty;
 
+    // Track cumulative wins for each player
+    private int player1Wins = 0;
+    private int player2Wins = 0;
+
     private string CurrentTurn => (winnerMessage == string.Empty) ? $"Player {State.PlayerTurn}'s Turn" : "";
     private string ResetStyle => (winnerMessage == string.Empty) ? "display: none;" : "";
 
@@ -67,23 +88,45 @@
         {
             // If State.PlayPiece throws an ArgumentException (e.g., column full), show it
             errorMessage = ex.Message;
+            return;
         }
-        // Check for a win or tie after the move
-        winnerMessage = State.CheckForWin() switch
+
+        // Check for win or tie after the move
+        var result = State.CheckForWin();
+        switch (result)
         {
-            GameState.WinState.Player1_Wins => "Player 1 Wins!",
-            GameState.WinState.Player2_Wins => "Player 2 Wins!",
-            GameState.WinState.Tie => "It's a tie!",
-            _ => ""
-        };
+            case GameState.WinState.Player1_Wins:
+                winnerMessage = "Player 1 Wins!";
+                player1Wins++; // Increment Player 1 cumulative wins
+                break;
+            case GameState.WinState.Player2_Wins:
+                winnerMessage = "Player 2 Wins!";
+                player2Wins++; // Increment Player 2 cumulative wins
+                break;
+            case GameState.WinState.Tie:
+                winnerMessage = "It's a tie!";
+                break;
+            default:
+                winnerMessage = string.Empty;
+                break;
+        }
     }
 
     void ResetGame()
     {
+        // Reset the board for a new round
+        // Cumulative wins are NOT reset here
         State.ResetBoard();
         winnerMessage = string.Empty;
         errorMessage = string.Empty;
         pieces = new string[42];
+    }
+
+    // Cumulative wins are reset here
+    void ResetScores()
+    {
+        player1Wins = 0;
+        player2Wins = 0;
     }
 
     [Parameter]

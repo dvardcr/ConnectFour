@@ -33,6 +33,44 @@ div.board[b-2hsj6j6moh] {
     border-left: 10px solid var(--board-bg)
 }
 
+/* Player 1 win styles */
+/* label color for Player 1 */
+.player1-wins .label[b-2hsj6j6moh] {
+    color: green;
+    font-weight: bold;
+}
+
+/* score color for Player 1 */
+.player1-wins .score[b-2hsj6j6moh] {
+    color: darkgrey;
+    font-weight: bold;
+}
+
+/* Player 2 win styles */
+.player2-wins[b-2hsj6j6moh] {
+    margin-left: 1em;
+}
+
+/* label color for Player 2 */
+.player2-wins .label[b-2hsj6j6moh] {
+    color: purple;
+    font-weight: bold;
+}
+
+/* score color for Player 2 */
+.player2-wins .score[b-2hsj6j6moh] {
+    color: darkgrey;
+    font-weight: bold;
+}
+
+/* Style for the Reset Score button */
+.reset-score-btn[b-2hsj6j6moh] {
+    margin-left: 1em;
+    padding: 0.25em 0.5em;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
 span.container[b-2hsj6j6moh] {
     width: 4em;
     height: 4em;
